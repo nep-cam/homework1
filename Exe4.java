@@ -5,17 +5,22 @@ public class Exe4 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap chuoi: ");
         String str = sc.nextLine();
-        System.out.println("So ky tu so: " + demSo(str));
+        System.out.println("So ky tu so: " + countNumberOfChar(str));
     }
 
-    public static int demSo(String str) {
-        int number = 0;
+    /**
+     * 
+     * @param str
+     * @return
+     */
+    public static int countNumberOfChar(String str) {
+        int count = 0;
         char[] charArray = str.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
             if (charArray[i] >= 48 && charArray[i] <= 57) {
-                number++;
+                count++;
             }
         }
-        return number;
+        return count;
     }
 }

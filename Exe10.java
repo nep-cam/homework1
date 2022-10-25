@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Exe10 {
@@ -5,19 +6,16 @@ public class Exe10 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap chuoi: ");
         String str = sc.nextLine();
-        String strNum = mangSo(str);
-        char[] charNum = strNum.toCharArray();
-
-    }
-
-    public static String mangSo(String str) {
-        String strNumber = "";
+        ArrayList<Integer> listNumber = new ArrayList<>();
         char[] charArray = str.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
             if (charArray[i] >= 48 && charArray[i] <= 57) {
-                strNumber += charArray[i];
+                listNumber.add(Integer.parseInt(String.valueOf(charArray[i])));
             }
         }
-        return strNumber;
+        System.out.print("Mang so: ");
+        for (int i = 0; i < listNumber.size(); i++) {
+            System.out.print(listNumber.get(i) + " ");
+        }
     }
 }

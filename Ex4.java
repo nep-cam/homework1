@@ -5,4 +5,5 @@ public class Ex4 {
         str1 = str.charAt(0) + str1.replace(str.charAt(0), '$');
         System.out.println(str1);
     }
+
 }

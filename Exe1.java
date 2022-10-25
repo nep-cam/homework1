@@ -3,7 +3,7 @@ public class Exe1 {
         String strA = "xin chao";
         String strB = "hello";
         String strC = "xin chao" + "hello";
-//        String str = strA.concat(strB);
+        //String str = strA.concat(strB);
         System.out.println(strC);
     }
 }

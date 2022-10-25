@@ -1,0 +1,2 @@
+public class Ex92 {
+}
